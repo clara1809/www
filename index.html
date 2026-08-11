@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>New York City</title>
+
+  <link rel="stylesheet" href="css/estilo.css">
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1 class="logo">NYC</h1>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#lugares">Lugares</a>
+      <a href="#experiencias">Experiencias</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- INICIO -->
+
+    <section id="inicio" class="inicio">
+
+      <div class="inicio-contenido">
+
+        <p class="subtitulo">THE CITY THAT NEVER SLEEPS</p>
+
+        <h2>NEW<br>YORK</h2>
+
+        <p class="descripcion">
+          Descubrí una ciudad llena de movimiento, cultura,
+          arquitectura y lugares inolvidables.
+        </p>
+
+        <a href="#lugares" class="boton">
+          Explorar la ciudad
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- INTRODUCCION -->
+
+    <section class="introduccion">
+
+      <p class="titulo-chico">DESCUBRÍ NYC</p>
+
+      <h2>
+        Una ciudad diferente en cada esquina.
+      </h2>
+
+      <p>
+        Nueva York es una de las ciudades más reconocidas del mundo.
+        Sus rascacielos, parques, museos, barrios y avenidas la convierten
+        en un destino único.
+      </p>
+
+    </section>
+
+
+    <!-- LUGARES -->
+
+    <section id="lugares" class="lugares">
+
+      <p class="titulo-chico">LUGARES IMPERDIBLES</p>
+
+      <h2>Conocé Nueva York</h2>
+
+
+      <div class="tarjetas">
+
+        <article class="tarjeta">
+
+          <div class="imagen imagen-times">
+            TIMES SQUARE
+          </div>
+
+          <div class="tarjeta-texto">
+
+            <span>01</span>
+
+            <h3>Times Square</h3>
+
+            <p>
+              Luces, pantallas gigantes y movimiento constante
+              en uno de los puntos más famosos de Manhattan.
+            </p>
+
+            <button onclick="mostrarLugar('Times Square')">
+              Ver más
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <article class="tarjeta">
+
+          <div class="imagen imagen-central">
+            CENTRAL PARK
+          </div>
+
+          <div class="tarjeta-texto">
+
+            <span>02</span>
+
+            <h3>Central Park</h3>
+
+            <p>
+              Un enorme espacio verde en el corazón de Manhattan,
+              ideal para caminar, descansar y recorrer.
+            </p>
+
+            <button onclick="mostrarLugar('Central Park')">
+              Ver más
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <article class="tarjeta">
+
+          <div class="imagen imagen-libertad">
+            STATUE OF LIBERTY
+          </div>
+
+          <div class="tarjeta-texto">
+
+            <span>03</span>
+
+            <h3>Estatua de la Libertad</h3>
+
+            <p>
+              Uno de los símbolos más reconocidos de Nueva York
+              y de Estados Unidos.
+            </p>
+
+            <button onclick="mostrarLugar('Estatua de la Libertad')">
+              Ver más
+            </button>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <p id="mensaje-lugar">
+        Elegí un lugar para conocer más.
+      </p>
+
+    </section>
+
+
+    <!-- EXPERIENCIAS -->
+
+    <section id="experiencias" class="experiencias">
+
+      <div class="experiencias-texto">
+
+        <p class="titulo-chico">VIVÍ LA CIUDAD</p>
+
+        <h2>
+          Mucho más que rascacielos.
+        </h2>
+
+      </div>
+
+
+      <div class="experiencias-grid">
+
+        <div class="experiencia">
+          <span>01</span>
+          <h3>Broadway</h3>
+          <p>
+            Disfrutá algunos de los musicales y espectáculos
+            más conocidos del mundo.
+          </p>
+        </div>
+
+
+        <div class="experiencia">
+          <span>02</span>
+          <h3>Brooklyn</h3>
+          <p>
+            Cruzá el Brooklyn Bridge y conocé otra mirada
+            de la ciudad.
+          </p>
+        </div>
+
+
+        <div class="experiencia">
+          <span>03</span>
+          <h3>Museos</h3>
+          <p>
+            Visitá espacios como el MoMA, el MET
+            y otros grandes museos.
+          </p>
+        </div>
+
+
+        <div class="experiencia">
+          <span>04</span>
+          <h3>Rooftops</h3>
+          <p>
+            Mirá Manhattan desde las alturas y disfrutá
+            increíbles vistas de la ciudad.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FRASE -->
+
+    <section class="frase">
+
+      <p>
+        “One belongs to New York instantly.”
+      </p>
+
+      <span>
+        Una ciudad que siempre tiene algo nuevo para descubrir.
+      </span>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="contacto">
+
+      <p class="titulo-chico">PLANIFICÁ TU VIAJE</p>
+
+      <h2>
+        ¿Listo para conocer Nueva York?
+      </h2>
+
+      <p>
+        Completá tus datos para recibir más información.
+      </p>
+
+
+      <form id="formulario">
+
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Tu nombre"
+          required
+        >
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Tu email"
+          required
+        >
+
+        <button type="submit">
+          Quiero viajar
+        </button>
+
+      </form>
+
+
+      <p id="mensaje-formulario"></p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div>
+      <h2>NYC</h2>
+
+      <p>
+        New York City
+      </p>
+    </div>
+
+    <p>
+      Página creada con HTML, CSS y JavaScript.
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
